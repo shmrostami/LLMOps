@@ -18,3 +18,13 @@ uuid==1.30
 langfuse==1.0.18
 backoff==2.2.1
 redis==5.0.0
+
+
+conda install anaconda::flask
+conda install conda-forge::flask_cors
+conda install conda-forge::flask-sqlalchemy
+conda install conda-forge::celery
+conda install conda-forge::invoke
+
+
+flask --app app.web init-db
