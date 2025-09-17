@@ -26,6 +26,8 @@ conda install conda-forge::flask-sqlalchemy
 conda install conda-forge::celery
 conda install conda-forge::invoke
 conda install conda-forge::pypdf
+conda install conda-forge::pinecone
+conda install conda-forge::werkzeug
 
 # initial db
 flask --app app.web init-db

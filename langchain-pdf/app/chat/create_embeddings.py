@@ -1,5 +1,8 @@
-from langchain.document_loaders import PyPDFLoader
+# from langchain.document_loaders import PyPDFLoader
+from langchain_community.document_loaders import PyPDFLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
+import os
+os.environ["PYTHONIOENCODING"] = "utf-8"
 
 def create_embeddings_for_pdf(pdf_id: str, pdf_path: str):
     """
