@@ -1,10 +1,8 @@
 import os
 import pinecone
 from langchain.vectorstores.pinecone import Pinecone
-# from app.chat.embeddings.openai import embeddings
-from langchain_ollama import OllamaEmbeddings
+from app.chat.embeddings.openai import embeddings
 
-embeddings = OllamaEmbeddings(model="nomic-embed-text")
 
 pinecone.Pinecone(
     api_key=os.getenv("PINECONE_API_KEY"),
