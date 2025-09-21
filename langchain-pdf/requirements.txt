@@ -18,6 +18,7 @@
 # langfuse==1.0.18
 # backoff==2.2.1
 # redis==5.0.0
+# langchain-chroma==0.1.0
 
 # Using annaconda
 conda install anaconda::flask
@@ -28,6 +29,7 @@ conda install conda-forge::invoke
 conda install conda-forge::pypdf
 conda install conda-forge::pinecone
 conda install conda-forge::werkzeug
+conda install conda-forge::langchain-chroma
 
 # initial db
 flask --app app.web init-db

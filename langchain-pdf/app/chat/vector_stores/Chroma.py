@@ -1,5 +1,5 @@
 import os
-from langchain.vectorstores.chroma import Chroma
+from langchain_chroma import Chroma
 from app.chat.embeddings.ollama import embeddings
 
 vector_store = Chroma(
