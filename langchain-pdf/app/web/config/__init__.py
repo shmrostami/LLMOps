@@ -12,5 +12,5 @@ class Config:
     CELERY = {
         "broker_url": os.environ.get("REDIS_URI", False),
         "task_ignore_result": True,
-        "broker_connection_retry_on_startup": False,
+        "broker_connection_retry_on_startup": True,
     }
